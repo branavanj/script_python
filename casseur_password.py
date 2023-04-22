@@ -15,9 +15,9 @@ def pwd_aleatoire():
     suiv = ""
     resultat = ""
     for i in range(len(mot_de_passe)):
-        while mot_de_passe[i] != suiv:
+        while mot_de_passe[i] != suiv: # boucle tant que le caractère suivant ne correspond pas au caractère du mot de passe
             print(resultat + suiv)
-            time.sleep(0.05) # # boucle tant que le caractère suivant ne correspond pas au caractère du mot de passe
+            time.sleep(0.05) 
             suiv = random.choice(lettres + "".join(chiffres))
         resultat += suiv
     return resultat
